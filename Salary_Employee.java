@@ -1,9 +1,9 @@
 package com.XTi.Projects;
 
-public abstract class Salary_Employee extends com.XTi.Projects.Employee {
+public abstract class SalariedEmployee extends com.XTi.Projects.Employee {
     private double WeeklySalary;
 
-    public Salary_Employee(String firstname, String lastname, String socialsecuritynum, double weeklySalary) {
+    public SalariedEmployee(String firstname, String lastname, String socialsecuritynum, double weeklySalary) {
         super(firstname, lastname, socialsecuritynum);
         if (WeeklySalary < 0.0)
             throw new IllegalArgumentException("Weekly Salary Should Be <= 0.0");
@@ -28,7 +28,7 @@ public abstract class Salary_Employee extends com.XTi.Projects.Employee {
     @Override
     public String toString()
     {
-        return String.format("Salary_Employee: %s%n%s: $%, .2f",super.toString(), "Weekly Salary", getWeeklySalary());
+        return String.format("Salaried Employee: %s%n%s: $%, .2f",super.toString(), "Weekly Salary", getWeeklySalary());
     }
 }
 
