@@ -1,6 +1,6 @@
 package com.XTi.Projects;
 
-public abstract class Employee {
+public abstract class Employee implements Payable {
     private String Firstname;
     private String Lastname;
     private String SocialSecurityNum;
