@@ -32,3 +32,4 @@ public abstract class Base_Plus_CommissionEmployee extends Employee {
         return String.format("%s, %s; %s; $%,.2f", "base-salaried", super.toString(), "base salary", getBaseSalary());
     }
 }
+
