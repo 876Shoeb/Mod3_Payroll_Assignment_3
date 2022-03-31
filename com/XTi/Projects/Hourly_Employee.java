@@ -1,6 +1,6 @@
 package com.XTi.Projects;
 
-public abstract class Hourly_Employee extends com.XTi.Projects.Employee {
+public abstract class Hourly_Employee extends Employee {
     private double Wage;
     private double Hours;
 

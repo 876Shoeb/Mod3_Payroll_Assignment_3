@@ -1,10 +1,12 @@
-public class Base_Plus_CommissionEmployee {
+package com.XTi.Projects;
+
+public abstract class Base_Plus_CommissionEmployee extends Employee {
     private double baseSalary;
 
-    public Base_Plus_CommissionEmployee(string firstName, string lastName, string socialSecurityNumber,
-                                        double grossSales, double commissionRate, double baseSalary)
-    {
-        super(firstName, lastName,socialSecurityNumber, grossSales, commissionRate);
+    public Base_Plus_CommissionEmployee(String firstname, String lastname, String socialsecurityNum,
+                                        double GrossSales, double CommissionRate, double baseSalary){
+            super(firstname, lastname, socialsecurityNum);
+
 
         if(baseSalary < 0.0)
             throw new IllegalArgumentException("base salary must be >=0.0");
@@ -21,8 +23,9 @@ public class Base_Plus_CommissionEmployee {
     }
     public double getBaseSalary()
     {
-        return getBaseSalary() + super.earnings();
+        return baseSalary;
     }
+
     @Override
     public String toString()
     {

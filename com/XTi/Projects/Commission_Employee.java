@@ -1,6 +1,6 @@
 package com.XTi.Projects;
 
-public abstract class Commission_Employee extends com.XTi.Projects.Employee {
+public abstract class Commission_Employee extends Employee {
     double GrossSales;
     double CommissionRate;
 
