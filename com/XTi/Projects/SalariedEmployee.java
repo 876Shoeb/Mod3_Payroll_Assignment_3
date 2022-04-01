@@ -1,6 +1,6 @@
 package com.XTi.Projects;
 
-public abstract class SalariedEmployee extends Employee {
+public class SalariedEmployee extends Employee {
     private double WeeklySalary;
 
     public SalariedEmployee(String firstname, String lastname, String socialsecuritynum, double weeklySalary) {

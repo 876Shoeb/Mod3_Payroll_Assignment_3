@@ -1,6 +1,6 @@
 package com.XTi.Projects;
 
-public abstract class Hourly_Employee extends Employee {
+public class Hourly_Employee extends Employee {
     private double Wage;
     private double Hours;
 
@@ -39,9 +39,20 @@ public abstract class Hourly_Employee extends Employee {
     }
 
     @Override
+    public double earnings() {
+        if (getHours() <=40)
+            return getWage() * getHours();
+        else {
+            return 40 * getWage() * (getHours() - 40) * getWage() * 1.5;
+        }
+    }
+
+    @Override
     public String toString(){
         return String.format("Hourly Employee: %s%n%s: $%, .2f: %s: %, .2f",super.toString(),
                 "Hourly Wage", getWage(), "Hours Worked", getHours());
     }
+
+
 }
 
