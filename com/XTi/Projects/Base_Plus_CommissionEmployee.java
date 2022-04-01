@@ -1,11 +1,11 @@
 package com.XTi.Projects;
 
-public abstract class Base_Plus_CommissionEmployee extends Employee {
+public class Base_Plus_CommissionEmployee extends Commission_Employee {
     private double baseSalary;
 
     public Base_Plus_CommissionEmployee(String firstname, String lastname, String socialsecurityNum,
                                         double GrossSales, double CommissionRate, double baseSalary){
-            super(firstname, lastname, socialsecurityNum);
+            super(firstname, lastname, socialsecurityNum, GrossSales, CommissionRate);
 
 
         if(baseSalary < 0.0)
